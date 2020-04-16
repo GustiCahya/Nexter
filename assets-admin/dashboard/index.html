@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>nexter &mdash; your home, your freedom</title>
+        <script async src="js/font-awesome.min.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    <body class="container">
+        <div class="sidebar">
+            <img class="sidebar__image" src="img/logo.png">
+            <ul class="sidebar__list">
+                <li class="item"><a class="link" href="#"><i class="fas fa-home"></i> <span>Menu</span></a></li>
+                <li class="item"><a class="link" href="#"><i class="fab fa-buffer"></i> <span>Pages</span></a></li>
+                <li class="item"><a class="link" href="#"><i class="far fa-copy"></i> <span>Blogs</span></a></li>
+                <li class="item"><a class="link" href="#"><i class="far fa-building"></i> <span>Properties</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="main__header">
+                <h1 class="main__title">Menu</h1>
+                <p class="main__desc">Welcome to the Dashboard Menu</p>
+            </div>
+            <div class="main__box">
+                <div class="box__cards">
+                    <div class="card">
+                        <i class="fab fa-buffer"></i> 
+                        <div>
+                            <p>Pages</p>
+                            <p>Total : {{num}}</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="far fa-copy"></i> 
+                        <div>
+                            <p>Blogs</p>
+                            <p>Total : {{num}}</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="far fa-building"></i> 
+                        <div>
+                            <p>Properties</p>
+                            <p>Total : {{num}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            &copy; Gusti Cahya
+        </footer>
+    </body>

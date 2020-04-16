@@ -1,0 +1,108 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest : 75em;   // 1200px
+$bp-large   : 62.5em; // 1000px
+$bp-medium  : 50em;   // 800px
+$bp-small   : 37.5em;   // 600px
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%; //8px
+    }
+
+}
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $color-grey-dark-2;
+}
+
+.btn{
+    background-color: $color-primary;
+    color: white;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-primary-dark;
+    }
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url('../img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login{
+    background-color: $color-secondary;
+    padding: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 3px;
+    h1{
+        font-family: $font-display;
+        margin-bottom: 2rem;
+    }
+    &__form{
+        .username{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            input{
+                font-size: 1.6rem;
+                padding: .5rem;
+            }
+            margin-bottom: 1rem;
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            input{
+                font-size: 1.6rem;
+                padding: .5rem;
+            }
+            margin-bottom: 2rem;
+        }
+        .btn{
+            width: 100%;
+            padding: 1rem 2rem;
+        }
+    }
+}
